@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+#include <windows.h>
+
+int main(void)
+{
+    while(1){
+    double a;
+    double b;
+    double c;
+    double n;
+    printf("输入:度,分,秒\n");
+    scanf("%lf,%lf,%lf",&a,&b,&c);
+    n = a + b/60 +c/3600;
+    printf("度数:%.10lf\n",n);
+        double s;
+        double t;
+		double as;
+		double ac;
+		double at;
+        double pi = 3.14159265358979323846264338327;
+        s=sin(n*2*pi/360); //求n的sin()值，并返回给n
+        c=cos(n*2*pi/360); //求n的cos()值，并返回给n
+        t=tan(n*2*pi/360);//求n的tan()值，并返回给n
+		as=asin(n)*360/(2*pi); //求n的asin()值，并返回给n
+        ac=acos(n)*360/(2*pi); //求n的acos()值，并返回给n
+        at=atan(n)*360/(2*pi);//求n的atan()值，并返回给n
+		printf("sin %f = %.15lf\n",n,s);//输出
+        printf("cos %f = %.15lf\n",n,c);//输出
+        printf("tan %f = %.15lf\n",n,t);//输出
+        printf("asin %f = 角度%.15lf\n",n,as);//输出
+        printf("acos %f = 角度%.15lf\n",n,ac);//输出
+        printf("atan %f = 角度%.15lf\n",n,at);//输出
+
+    }
+ }
